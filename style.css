@@ -31,7 +31,7 @@ footer{
 }
 
 header, footer{
-    background: aquamarine 100%;
+    background-color: aquamarine;
     display: flex;
     align-items: center;
     justify-content: space-between;
