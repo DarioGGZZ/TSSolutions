@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Agrego bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../style.css">
     <title>TSS</title>
 </head>
 <body>
     <!-- header -->
     <header>
-        <img class="logo" src="../assets/images/TSSLogo.png" alt="TSS logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a  href="tecnologias.html">Tecnologias</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../assets/images/TSSLogo.png" alt="TSS logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contact</a>
+                  </div>
+                </div>
+              </div>
+          </nav>
     </header>
     <!-- Fin header -->
 
@@ -42,8 +42,22 @@
     <section class="main-contacto">
         <!-- Inicio section con formulario -->
         <div class="form-section">
-            <p>ESTO VA A SER UN FORMULARIO</p>
-            <!-- Esto sería un formulario para que el usuario pueda dejar su mensaje -->
+            <form>
+                <div class="mb-3">
+                  <label for="inputName" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Mail</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </div>
         <!-- Fin section con formulario -->
 
@@ -59,30 +73,8 @@
         <!-- Fin section datos contacto de la empresa -->
     </section>
 
+    <!-- Agrego bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-    <!-- footer -->
-    <footer>
-        <img class="logo" src="../assets/images/TSSLogo.png" alt="TSS logo">
-        <div class="social-media-icons-container">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com" target="_blank">
-                        <img class="icon" class="linkedin" src="../assets/images/linkedin.svg" alt="linkedin logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/home" target="_blank">
-                        <img class="icon" class="twitter" src="../assets/images/twitter.webp" alt="twitter logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">
-                        <img class="icon" class="email" src="../assets/images/email.jpg" alt="email logo">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-    <!-- Fin footer -->
 </body>
 </html>

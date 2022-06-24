@@ -9,35 +9,7 @@
     padding: 0;
 }
 
-body{
-    display: grid;
-    width: 100%;
-    grid-template-areas: 
-    "head"
-    "title"
-    "info"
-    "foot";
-}
-
-header{
-    grid-area: head;
-}
-
-footer{
-    grid-area: foot;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-header, footer{
-    background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-img, nav{
+img{
     padding: 0 2vw;
 }
 
@@ -75,7 +47,7 @@ p{
 /* Clases en mas de un .html  */
 
 .logo{
-    width: 6rem;
+    width: 8rem;
 }
 
 .icon{
