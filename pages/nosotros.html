@@ -14,60 +14,61 @@
 <body>
     <!-- header -->
     <header>
-        <img class="logo" src="../assets/images/TSSLogo.png" alt="TSS logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a  href="tecnologias.html">Tecnologias</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../assets/images/TSSLogo.png" alt="TSS logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="tecnologias.html">Tecnologias</a>
+                        <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Fin header -->
 
-    <!-- Inicio section -->
-    <section class="title">
-        <h1>Nosotros</h1>
-    </section>
-    <!-- Fin section -->
+    <main>
+        <!-- Inicio section -->
+        <section class="title">
+            <h1>Nosotros</h1>
+        </section>
+        <!-- Fin section -->
 
-    <!-- Aca inicia el section del core de la vista nosotros -->
-    <section>
-        <ul class="about-us-list">
-            <li class="about-us-item">
-                <h2 class="about-us-item-title">¿Quienes somos?</h2>
-                <p class="about-us-item-description">
-                    Somos un grupo de desarrolladores apasionados por lo que hacemos, con ganas de seguir creciendo y compartir nuestro conocimiento y crecimiento con nuestros clientes.
-                </p>
-            </li>
-            <li class="about-us-item">
-                <h2 class="about-us-item-title">Nuestros objetivos</h2>
-                <p class="about-us-item-description">
-                    Nuestro principal objetivo es brindar soluciones tecnológicas a los problemas que las empresas afrontan dia a dia,
-                    para que puedan concentrarse al 100% en lo que verdaderamente les importa.
-                </p>
-            </li>
-            <li class="about-us-item">            
-                <h2 class="about-us-item-title">Equipo</h2>
-                <p class="about-us-item-description">
-                    Nuestro equipo cuenta con expertos en el desarrollo de software de todo tipo. Desde expertos en backend, QA's, DBA's, expertos en frontend, hasta UI/UX's designers.
-                </p>
-            </li>
-        </ul>
-    </section>
-    <!-- Aca finaliza el section del core de la vista nosotros -->
+        <!-- Aca inicia el section del core de la vista nosotros -->
+        <section>
+            <ul class="about-us-list">
+                <li class="about-us-item">
+                    <h2 class="about-us-item-title">¿Quienes somos?</h2>
+                    <p class="about-us-item-description">
+                        Somos un grupo de desarrolladores apasionados por lo que hacemos, con ganas de seguir creciendo y compartir nuestro conocimiento y crecimiento con nuestros clientes.
+                    </p>
+                </li>
+                <li class="about-us-item">
+                    <h2 class="about-us-item-title">Nuestros objetivos</h2>
+                    <p class="about-us-item-description">
+                        Nuestro principal objetivo es brindar soluciones tecnológicas a los problemas que las empresas afrontan dia a dia,
+                        para que puedan concentrarse al 100% en lo que verdaderamente les importa.
+                    </p>
+                </li>
+                <li class="about-us-item">            
+                    <h2 class="about-us-item-title">Equipo</h2>
+                    <p class="about-us-item-description">
+                        Nuestro equipo cuenta con expertos en el desarrollo de software de todo tipo. Desde expertos en backend, QA's, DBA's, expertos en frontend, hasta UI/UX's designers.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <!-- Aca finaliza el section del core de la vista nosotros -->
+    </main>
     
     <!-- Agrego Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
