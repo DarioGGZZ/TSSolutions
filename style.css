@@ -7,37 +7,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
-body{
-    display: grid;
-    width: 100%;
-    grid-template-areas: 
-    "head"
-    "title"
-    "info"
-    "foot";
+main{
+    padding-top: 2rem;
 }
 
-header{
-    grid-area: head;
-}
-
-footer{
-    grid-area: foot;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-header, footer{
-    background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-img, nav{
+img{
     padding: 0 2vw;
 }
 
@@ -54,9 +31,6 @@ a{
     text-decoration: none;
 }
 
-h1, h2, p{
-    font-family:  'Oswald', sans-serif;
-}
 
 h1{
     font-size: 6.5vh;
@@ -75,15 +49,10 @@ p{
 /* Clases en mas de un .html  */
 
 .logo{
-    width: 6rem;
-}
-
-.icon{
-    width: 2rem;
+    width: 8rem;
 }
 
 .title{
-    grid-area: title;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -99,14 +68,13 @@ p{
 /* Clases de index.html */
 
 .home-main{
-    grid-area: info;
     display: flex;
     justify-content: space-around;
+    gap: 2rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .home-main{
-        grid-area: info;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -141,19 +109,9 @@ p{
 
 .about-us-item{
     text-align: center;
-    margin: 0 5%;
 }
 
-.about-us-item-title{
-    padding-bottom: 1rem;
-    border-bottom: 1px solid black;
-}
-
-.about-us-item-description{
-    margin-top: 1rem;
-}
-
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .about-us-list{
         display: flex;
         flex-direction: column;
@@ -164,30 +122,27 @@ p{
 
 /* Clases de tecnologias.html */
 
-.carrousel{
-    grid-area: info;
-    margin-top: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.icon{
+    width: 10%;
 }
 
-.carrousel-icon{
-    width: 5%;
+.carousel{
+    margin-top: 10%;
 }
 
-@media (max-width: 700px) {
-    .carrousel{
-        grid-area: info;
-        margin-top: 2vh;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
-    }
+.carousel-indicators{
+    position: fixed;
+    bottom: 15%
+}
 
-    .carrousel-icon{
-        width: 30%;
-        justify-self: center;
+.carousel-indicators button{
+    filter: invert(100%);
+}
+
+@media  (max-width: 1000px) {
+    .carousel-indicators{
+        position: fixed;
+        bottom: 10%;
     }
 }
 
@@ -195,7 +150,7 @@ p{
 
 .main-contacto{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -207,11 +162,17 @@ p{
     gap: 1rem;
 }
 
-@media (max-width: 700px) {
+.form{
+    background-color: rgb(168, 168, 168);
+    padding: 2%;
+}
+
+@media (max-width: 1000px) {
     .main-contacto{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        gap: 2rem;
     }
 }

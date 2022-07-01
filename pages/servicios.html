@@ -4,84 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Agrego bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../style.css">
     <title>TSS</title>
 </head>
 <body>
     <!-- header -->
     <header>
-        <img class="logo" src="../assets/images/TSSLogo.png" alt="TSS logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a  href="tecnologias.html">Tecnologias</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../assets/images/TSSLogo.png" alt="TSS logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="../index.html">Home</a>
+                      <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+                      <a class="nav-link" href="tecnologias.html">Tecnologias</a>
+                      <a class="nav-link" href="nosotros.html">Nosotros</a>
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Fin header -->
     
-    <!-- Inicio section -->
-    <section class="title">
-        <h1>Servicios</h1>
-    </section>
-    <!-- Fin section -->
+    <main>
+        <!-- Inicio section -->
+        <section class="title">
+            <h1>Servicios</h1>
+        </section>
+        <!-- Fin section -->
 
-    <!-- Inicio section core-->
-    <section class="services-description">
-        <p>
-            Nuestro servicio es flexible de acuerdo a las necesidades del cliente.
-        </p>
+        <!-- Inicio section core-->
+        <section class="services-description">
+            <p>
+                Nuestro servicio es flexible de acuerdo a las necesidades del cliente.
+            </p>
+            
+            <p>
+                Desarrollamos aplicaciones desde cero, solo frontend para un backend ya existente, 
+                backend para una idea de frontend, desarrollos fullstack, mantenimiento de sitios, 
+                diseños, SPA, migraciones.
+            </p>
         
-        <p>
-            Desarrollamos aplicaciones desde cero, solo frontend para un backend ya existente, 
-            backend para una idea de frontend, desarrollos fullstack, mantenimiento de sitios, 
-            diseños, SPA, migraciones.
-        </p>
-    
-        <p>
-            Todo el proceso de desarrollo se lleva a cabo con metodologias agiles.
-        </p>
-    </section>
-    <!-- Fin section core-->
+            <p>
+                Todo el proceso de desarrollo se lleva a cabo con metodologias agiles.
+            </p>
+        </section>
+        <!-- Fin section core-->
+    </main>
 
 
-    <!-- footer -->
-    <footer>
-        <img class="logo" src="../assets/images/TSSLogo.png" alt="TSS logo">
-        <div class="social-media-icons-container">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com" target="_blank">
-                        <img class="icon" class="linkedin" src="../assets/images/linkedin.svg" alt="linkedin logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/home" target="_blank">
-                        <img class="icon" class="twitter" src="../assets/images/twitter.webp" alt="twitter logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">
-                        <img class="icon" class="email" src="../assets/images/email.jpg" alt="email logo">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-    <!-- Fin footer -->
+    <!-- Agrego Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
