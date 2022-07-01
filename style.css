@@ -81,6 +81,14 @@ p{
         justify-content: center;
         gap: 1rem;
     }
+
+    .logo{
+        width: 4rem;
+    }
+
+    .title{
+        padding: 0 1%;
+    }
 }
 
 /* Clases de servicios.html */
@@ -102,6 +110,12 @@ p{
 @media (max-width: 700px) {
     .services-description{
         margin: 2vh 0;
+        text-align: center;
+    }
+
+    .services-description p{
+        font-size: 2vh;
+        padding: 0 1%;
     }
 }
 
