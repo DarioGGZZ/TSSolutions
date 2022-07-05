@@ -1,0 +1,34 @@
+$zero: 0;
+$gapForFlex: 2rem;
+$vhForSize: 2vh;
+
+*{
+    margin: $zero;
+    padding: $zero;
+    font-family: 'Oswald', sans-serif;
+}
+
+main{
+    padding-top: $gapForFlex;
+}
+
+img{
+    padding: $zero $gapForFlex;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $gapForFlex/2;
+}
+
+h1{
+    font-size: $vhForSize*4;
+}
+
+p{
+    text-align: center;
+    font-size: $vhForSize;
+}

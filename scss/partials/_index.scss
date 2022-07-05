@@ -1,0 +1,40 @@
+$mobileSize: 1000px;
+$gapForFlex: 1rem;
+
+.logo{
+    width: $gapForFlex*8;
+}
+
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $gapForFlex*2;
+}
+
+.home-main{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    gap: $gapForFlex*2;
+}
+
+@media screen and (max-width: $mobileSize) {
+    .home-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $gapForFlex;
+    }
+
+    .logo{
+        width: $gapForFlex*8;
+    }
+
+    .title{
+        padding: 0 1%;
+    }
+}
