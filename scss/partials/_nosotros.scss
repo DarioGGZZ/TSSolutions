@@ -1,0 +1,14 @@
+.about-us-list{
+    padding-top: map-get($remSizes, ten);
+
+    @include thousand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.about-us-item{
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+.main-contacto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include thousand{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: map-get($remSizes, two);
+    }
+}
+
+.found-us{
+    @extend %flexColumnCenter;
+    margin-top: 2%;
+    gap: map-get($remSizes, one);
+
+    @include thousand{
+        width: 100%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: map-get($remSizes, one);
+    }
+}
+
+iframe{
+    @include thousand{
+        max-width: 80%;
+    }
+}
+
+.form{
+    background-color: rgb(168, 168, 168);
+    padding: 2%;
+}
+

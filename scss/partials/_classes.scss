@@ -1,0 +1,25 @@
+%flexColumnCenterCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%flexColumnCenterSpaceAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%flexrowCenterCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

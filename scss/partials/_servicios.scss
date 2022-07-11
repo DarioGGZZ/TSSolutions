@@ -1,0 +1,20 @@
+.services-description p{
+    text-align: center;
+    font-size: map-get($vhSizes, four);
+
+    @include seven-hundred{
+        font-size: map-get($vhSizes, two);
+        padding: 0 1%;
+    }
+}
+
+.services-description{
+    @extend %flexColumnCenterCenter;
+    margin: map-get($vhSizes, fifteen) map-get($remSizes, zero);
+    gap: map-get($remSizes, two);
+
+    @include seven-hundred{
+        margin: map-get($vhSizes, two) map-get($remSizes, zero);
+        text-align: center;
+    }
+}

@@ -1,0 +1,33 @@
+*{
+    margin: map-get($remSizes, zero);
+    padding: map-get($remSizes, zero);
+    font-family: 'Oswald', sans-serif;
+}
+
+main{
+    padding-top: map-get($remSizes, two);
+}
+
+img{
+    padding:  map-get($remSizes, zero) map-get($remSizes, two);
+}
+
+ul{
+    @extend %flexrowCenterCenter;
+    list-style: none;
+    gap: map-get($remSizes, one);
+
+    @include thousand{
+        padding: map-get($remSizes, zero);
+        margin: map-get($remSizes, zero);
+    }
+}
+
+h1{
+    font-size: map-get($vhSizes, eight);
+}
+
+p{
+    text-align: center;
+    font-size: map-get($vhSizes, two);
+}

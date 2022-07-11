@@ -1,0 +1,32 @@
+.logo{
+    width: map-get($remSizes, eight);
+
+    @include thousand {
+        width: map-get($remSizes, eight);
+    }
+}
+
+.title{
+    @extend %flexColumnCenterCenter;
+    text-align: center;
+    gap: map-get($remSizes, two);
+
+    @include thousand {
+        padding: 0 1%;
+    }
+}
+
+.home-main{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    gap: map-get($remSizes, two);
+
+    @include thousand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: map-get($remSizes, one);
+    }
+}

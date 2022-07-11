@@ -1,0 +1,153 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+.title, .services-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.found-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: 'Oswald', sans-serif; }
+
+main {
+  padding-top: 2rem; }
+
+img {
+  padding: 0rem 2rem; }
+
+ul {
+  list-style: none;
+  gap: 1rem; }
+  @media (max-width: 1000px) {
+    ul {
+      padding: 0rem;
+      margin: 0rem; } }
+
+h1 {
+  font-size: 8vh; }
+
+p {
+  text-align: center;
+  font-size: 2vh; }
+
+.logo {
+  width: 8rem; }
+  @media (max-width: 1000px) {
+    .logo {
+      width: 8rem; } }
+
+.title {
+  text-align: center;
+  gap: 2rem; }
+  @media (max-width: 1000px) {
+    .title {
+      padding: 0 1%; } }
+
+.home-main {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem; }
+  @media (max-width: 1000px) {
+    .home-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem; } }
+
+.main-contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  @media (max-width: 1000px) {
+    .main-contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem; } }
+
+.found-us {
+  margin-top: 2%;
+  gap: 1rem; }
+  @media (max-width: 1000px) {
+    .found-us {
+      width: 100%;
+      margin-top: 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; } }
+
+@media (max-width: 1000px) {
+  iframe {
+    max-width: 80%; } }
+
+.form {
+  background-color: #a8a8a8;
+  padding: 2%; }
+
+.about-us-list {
+  padding-top: 10rem; }
+  @media (max-width: 1000px) {
+    .about-us-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+
+.about-us-item {
+  text-align: center; }
+
+.icon {
+  width: 15%; }
+  @media (max-width: 1000px) {
+    .icon {
+      width: 30%; } }
+  @media (max-width: 500px) {
+    .icon {
+      width: 50%; } }
+
+.carousel {
+  margin-top: 10%; }
+
+.carousel-indicators {
+  position: fixed;
+  bottom: 15%; }
+  @media (max-width: 1000px) {
+    .carousel-indicators {
+      position: fixed;
+      bottom: 10%; } }
+
+.carousel-indicators button {
+  filter: invert(100%); }
+
+.services-description p {
+  text-align: center;
+  font-size: 4vh; }
+  @media (max-width: 700px) {
+    .services-description p {
+      font-size: 2vh;
+      padding: 0 1%; } }
+
+.services-description {
+  margin: 15vh 0rem;
+  gap: 2rem; }
+  @media (max-width: 700px) {
+    .services-description {
+      margin: 2vh 0rem;
+      text-align: center; } }

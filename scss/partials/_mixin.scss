@@ -1,0 +1,17 @@
+@mixin thousand {
+    @media (max-width: 1000px) { 
+        @content; 
+    }
+}
+
+@mixin seven-hundred {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin five-hundred {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
