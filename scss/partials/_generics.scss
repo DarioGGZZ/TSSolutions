@@ -24,7 +24,7 @@ ul{
 }
 
 h1{
-    font-size: map-get($vhSizes, eight);
+    font-size: map-get($remSizes, three);
 }
 
 h5{
@@ -34,5 +34,9 @@ h5{
 
 p{
     text-align: center;
-    font-size: map-get($vhSizes, two);
+    font-size: map-get($vhSizes, three);
+
+    @include thousand{
+        font-size: map-get($remSizes, one);
+    }
 }

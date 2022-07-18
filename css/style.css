@@ -36,7 +36,7 @@ ul {
       margin: 0rem; } }
 
 h1 {
-  font-size: 8vh; }
+  font-size: 3rem; }
 
 h5 {
   font-size: 4vh;
@@ -44,7 +44,10 @@ h5 {
 
 p {
   text-align: center;
-  font-size: 2vh; }
+  font-size: 3vh; }
+  @media (max-width: 1000px) {
+    p {
+      font-size: 1rem; } }
 
 .logo {
   width: 8rem; }
@@ -140,11 +143,9 @@ p {
   filter: invert(100%); }
 
 .services-description p {
-  text-align: center;
-  font-size: 4vh; }
+  text-align: center; }
   @media (max-width: 700px) {
     .services-description p {
-      font-size: 2vh;
       padding: 0 1%; } }
 
 .services-description {

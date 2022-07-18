@@ -1,9 +1,7 @@
 .services-description p{
     text-align: center;
-    font-size: map-get($vhSizes, four);
 
     @include seven-hundred{
-        font-size: map-get($vhSizes, two);
         padding: 0 1%;
     }
 }
