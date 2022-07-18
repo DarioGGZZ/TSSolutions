@@ -1,5 +1,5 @@
 .icon{
-    width: 15%;
+    width: 10%;
 
     @include thousand{
         width: 30%;
@@ -11,20 +11,17 @@
 }
 
 .carousel{
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .carousel-indicators{
-    position: fixed;
-    bottom: 15%;
-
-    @include thousand{
-        position: fixed;
-        bottom: 10%;
-    }
-    
+    position: relative;
 }
 
 .carousel-indicators button{
+    filter: invert(100%);
+}
+
+.carousel button{
     filter: invert(100%);
 }
