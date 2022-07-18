@@ -34,7 +34,7 @@ h5{
 
 p{
     text-align: center;
-    font-size: map-get($vhSizes, three);
+    font-size: map-get($vhSizes, two);
 
     @include thousand{
         font-size: map-get($remSizes, one);
